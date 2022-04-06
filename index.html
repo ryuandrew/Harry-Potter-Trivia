@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Trivia</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="./highScores.html">View High Scores</a>
+        <div class="timeLeft">Time Left: <span id="timer">0</span></div>
+    </header>
+    
+    <main>
+        <div id="homeScreen">
+            <h1>Harry Potter Trivia Questions</h1>
+            <p>Rule: Answer as quickly as you can before the time runs out. Keep in mind that there is 10 second penalty for every incorrect answer. Good luck!</p>
+            <button id="start">Start</button>
+        </div>
+
+        <div id="quiz" class="hide">
+            <div id="isCorrect" class="hide"></div>
+            <h2 id="displayQuestion"></h2>
+            <div id="multipleChoice"></div>
+        </div>
+
+        <div id="endScreen" class="hide">
+            <h2>Times up!</h2>
+            <p>Your final score is: <span id="finalScore"></span></p>
+            
+            <label for="initials">Enter initials: </label> 
+            <input type="text" placeholder="AR" id="initials"/>
+           <button id="submit">Submit</button>
+        </div>
+    </main>
+    
+    <script src="./Assets/js/questions.js"></script>
+    <script src="./Assets/js/script.js"></script>
+</body>
+</html>

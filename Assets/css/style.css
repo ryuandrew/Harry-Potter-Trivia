@@ -1,0 +1,62 @@
+* {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+    width: 100%;
+}
+
+.timeLeft {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#highScores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#homeScreen, #quiz, #endScreen, #highScores, #savedScores {
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin: 4px;
+    padding: 4px 8px;
+    width: auto;
+}
+
+button:hover {
+    background-color: grey;
+
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    color:green;
+    font-size: 2em;
+}
+
+.wrong {
+    color:red;
+    font-size: 2em;
+}
+
+#iscorrect {
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+}
